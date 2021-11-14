@@ -16,13 +16,14 @@ def freq(text):
     #Printing results
     freq = operator.itemgetter(1)
     for k, v in sorted(count.items(), reverse=True, key=freq):
-        print('Frequency of word "', k, '" is ', v)
+        print('Frequency of word"', k, '" is ', v)
 
 def main():
     #Reading text from the file
     with open('text.txt', 'r', ) as f:
         text = f.read()
     print('Input text : ', text)
+    print('Frequency of words:')
     freq(text)
 
 if __name__ == "__main__":
